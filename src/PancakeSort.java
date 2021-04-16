@@ -29,14 +29,14 @@ public class PancakeSort {
         for(int currentSize = n; currentSize > 1; --currentSize){
             // znajduję index największego elementu tablicy od indeksu 0 do wielkość -1
             int maxNumberIndex = maxNumber(numbers, currentSize);
-            //jeśli nie jest to koniec aktualnej tablicy to przesuwam największy element na koniec
+            //przesuwam największy element tablicy o ile już nie jest ostatni
             if(maxNumberIndex != currentSize -1){
-                // odwracam tablicę, aby największy numer był pierwszy
+                // przenoszę max numer na początek
                 flip(numbers, maxNumberIndex);
-//                ArrayPrinter.arrayPrinter(numbers, numbers.length);
-                // odwracam całą tablicę aby największy element był na dole
+                ArrayPrinter.arrayPrinter(numbers, numbers.length);
+                // przenoszę max numer na koniec odwracając tablicę
                 flip(numbers, currentSize -1);
-//                ArrayPrinter.arrayPrinter(numbers, numbers.length);
+                ArrayPrinter.arrayPrinter(numbers, numbers.length);
 
             }
         }
