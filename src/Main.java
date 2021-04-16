@@ -1,9 +1,13 @@
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        PancakeSort.pancakeSort("input.txt");
+        int[] arrayToSort = NumberReader.readFile("C:\\Users\\mail2\\IdeaProjects\\MHEPancakeSorting\\input.txt");
+        ArrayPrinter.arrayPrinter(arrayToSort, arrayToSort.length);
+
+        PancakeSort.goalFunction(arrayToSort, arrayToSort.length);
+        System.out.println("*************************************");
+        ArrayPrinter.arrayPrinter(arrayToSort, arrayToSort.length);
+
     }
 }
