@@ -9,5 +9,11 @@ public class Main {
         System.out.println("*************************************");
         ArrayPrinter.arrayPrinter(arrayToSort, arrayToSort.length);
 
+        int[] generatedArray = ArrayGenarate.arrayGenerate(6);
+        ArrayPrinter.arrayPrinter(generatedArray, generatedArray.length);
+        PancakeSort.goalFunction(generatedArray, generatedArray.length);
+        System.out.println("*************************************");
+        ArrayPrinter.arrayPrinter(generatedArray, generatedArray.length);
+
     }
 }
