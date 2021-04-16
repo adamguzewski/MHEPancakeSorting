@@ -33,8 +33,11 @@ public class PancakeSort {
             if(maxNumberIndex != currentSize -1){
                 // odwracam tablicę, aby największy numer był pierwszy
                 flip(numbers, maxNumberIndex);
+//                ArrayPrinter.arrayPrinter(numbers, numbers.length);
                 // odwracam całą tablicę aby największy element był na dole
                 flip(numbers, currentSize -1);
+//                ArrayPrinter.arrayPrinter(numbers, numbers.length);
+
             }
         }
     }

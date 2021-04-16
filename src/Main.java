@@ -3,10 +3,10 @@ import java.io.FileNotFoundException;
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
 
-        int[] given = GivenNumbers.givenNumbers();
-
-        PancakeSort.goalFunction(given, given.length);
-        ArrayPrinter.arrayPrinter(given, given.length);
+//        int[] given = GivenNumbers.givenNumbers();
+//
+//        PancakeSort.goalFunction(given, given.length);
+//        ArrayPrinter.arrayPrinter(given, given.length);
 
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.println("Podaj ilość elementów w tablicy: ");
@@ -19,12 +19,12 @@ public class Main {
 //        PancakeSort.goalFunction(gen, gen.length);
 //        ArrayPrinter.arrayPrinter(gen, gen.length);
 
-//        int[] arrayToSort = NumberReader.readFile("C:\\Users\\mail2\\IdeaProjects\\MHEPancakeSorting\\input.txt");
-//        ArrayPrinter.arrayPrinter(arrayToSort, arrayToSort.length);
-//
-//        PancakeSort.goalFunction(arrayToSort, arrayToSort.length);
-//        System.out.println("*************************************");
-//        ArrayPrinter.arrayPrinter(arrayToSort, arrayToSort.length);
+        int[] arrayToSort = NumberReader.readFile("C:\\Users\\mail2\\IdeaProjects\\MHEPancakeSorting\\input.txt");
+        ArrayPrinter.arrayPrinter(arrayToSort, arrayToSort.length);
+
+        PancakeSort.goalFunction(arrayToSort, arrayToSort.length);
+        System.out.println("*************************************");
+        ArrayPrinter.arrayPrinter(arrayToSort, arrayToSort.length);
 //
 //        int[] generatedArray = ArrayGenarate.arrayGenerate(6);
 //        ArrayPrinter.arrayPrinter(generatedArray, generatedArray.length);
