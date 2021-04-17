@@ -37,7 +37,6 @@ public class PancakeSort {
                 // przenoszę max numer na koniec odwracając tablicę
                 flip(numbers, currentSize -1);
                 ArrayPrinter.arrayPrinter(numbers, numbers.length);
-
             }
         }
     }
